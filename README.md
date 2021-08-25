@@ -99,7 +99,7 @@ src
 
 > Urban Express ERD
 
-[ERD Sample](https://i.imgur.com/MNJ1FR3.png)
+[ERD Sample](https://i.imgur.com/dYa7Tl9.png)
 <br>
 
 ***
