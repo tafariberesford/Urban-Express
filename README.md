@@ -47,10 +47,6 @@ https://www.figma.com/file/kd6bbp3VwmZaJvU0rcVFrw/UrbanExpressWireFrame
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
-
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
-
 #### Component Architecture
 
 > Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
@@ -59,18 +55,20 @@ https://www.figma.com/file/kd6bbp3VwmZaJvU0rcVFrw/UrbanExpressWireFrame
 
 src
 |__ components/
-      |__ homepage.js
       |__ signIn.js
       |__ signUp.js
-      |__ footer.js
       |__ songReview.js
-      |__ userReview.js
+      |__ createReview.js
       |__ signOut.js
       |__ deleteReview.js
 |__ services/
       |__ apiconfig.js
 |__ views/
       |__ Home.jsx
+      |__ Navbar.jsx
+      |__ UserPage.jsx
+      |__ Layout.jsx
+      |__ Footer.jsx
 
 ```
 
@@ -89,8 +87,8 @@ src
 | Components          |    H     |     6 hrs      |      hrs      |     TBD     |
 | Rendering Homepage  |    H     |     2 hrs      |      hrs      |     TBD     |
 | CSS                 |    H     |     3 hrs      |     4 hrs     |     TBD     |
-| Deployment          |    H     |     3 hrs      |     2 hrs     |     TBD     |
-| TOTAL               |          |     34 hrs     |     3 hrs     |     TBD     |
+| Deployment          |    H     |     7 hrs      |     2 hrs     |     TBD     |
+| TOTAL               |          |     38 hrs     |     3 hrs     |     TBD     |
 
 
 <br>
@@ -101,7 +99,7 @@ src
 
 > Urban Express ERD
 
-[ERD Sample](https://i.imgur.com/zAldyew.png)
+[ERD Sample](https://i.imgur.com/MNJ1FR3.png)
 <br>
 
 ***
