@@ -52,7 +52,7 @@ before_action :authorize_request, only: [:show, :index, :create, :update, :destr
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:song).permit(:title, :artist, :image_url)
+      params.require(:song).permit(:title, :artist, :image_url, :user_id)
     end
 end
 
