@@ -4,6 +4,7 @@ import SignUp from './screens/SignUp';
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import Layout from './layout/Layout';
+import MainContainer from './containers/MainContainer';
 import {
   loginUser,
   registerUser,
@@ -53,9 +54,9 @@ function App() {
       <Route path='/signup'>
         <SignUp handleRegister={handleRegister} />
       </Route>
-      {/* <Route path='/'>
+      <Route path='/'>
         <MainContainer currentUser={currentUser} />
-      </Route> */}
+      </Route>
       </Layout>
     </div>
   );

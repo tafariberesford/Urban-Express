@@ -1,12 +1,12 @@
 class SongsController < ApplicationController
-before_action :set_song, only: [:show, :index, :create, :update, :destroy ]
+before_action :set_song, only: [:show, :update, :destroy ]
 before_action :authorize_request, only: [:show, :index, :create, :update, :destroy]
 
 
   # GET /songs
   def index
 
-    @songs = Songs.all
+    @songs = Song.all
 
     render json: @songs
   end
@@ -18,7 +18,7 @@ before_action :authorize_request, only: [:show, :index, :create, :update, :destr
 
   # POST /songs
   def create
-    @songs = Songs.new(song_params)
+    @songs = Song.new(song_params)
     @song.user = @current_user
     
     if @song.save
@@ -54,6 +54,4 @@ before_action :authorize_request, only: [:show, :index, :create, :update, :destr
     def user_params
       params.require(:song).permit(:title, :artist, :image_url, :user_id)
     end
-end
-
 end

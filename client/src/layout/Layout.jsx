@@ -7,7 +7,7 @@ export default function Layout(props) {
       <h1>Urban Express</h1>
       {currentUser ? (
         <div>
-          <p>{currentUser.username}</p>
+          <p>Welcome {currentUser.username}</p>
           <button onClick={handleLogout}>Logout</button>
         </div>
       ) : (

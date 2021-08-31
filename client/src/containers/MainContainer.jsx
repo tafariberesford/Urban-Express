@@ -1,34 +1,37 @@
 import { useState, useEffect } from "react";
 import Homepage from '../screens/Homepage';
-import SongDetail from '../screens/SongDetail';
-import SongEdit from '../screens/SongEdit';
+// import SongDetail from '../screens/SongDetail';
+// import SongEdit from '../screens/SongEdit';
 import SongList from '../screens/SongList';
-import SongCreate from '../screens/SongCreate';
+// import SongCreate from '../screens/SongCreate';
 import { getAllReviews, postReview } from "../services/reviews";
 import { getAllSongs, postSong, putSong, deleteSong } from "../services/songs";
-import { useHistory, Switch } from "react-router-dom";
+import { useHistory, Switch, Route } from "react-router-dom";
 
-export default function () {
+export default function (props) {
   const [songs, setSongs] = useState([]);
   const [reviews, setReviews] = useState([]);
-  const { currentUser } = props;
   const history = useHistory();
-
+  const { currentUser } = props;
   useEffect(() => {
     const fetchSongs = async () => {
       const songList = await getAllSongs();
       setSongs(songList);
     };
-    fetchSongs();
-  }, []);
+    if (currentUser) {
+      fetchSongs()
+    }
+  }, [currentUser]);
 
   useEffect(() => {
     const fetchReviews = async () => {
       const reviewList = await getAllReviews();
       setReviews(reviewList);
     };
-    fetchReviews();
-  }, []);
+    if (currentUser) {
+      fetchReviews();
+    }
+  }, [currentUser]);
 
   const handleCreate = async (formData) => {
     const songData = await postSong(formData);
@@ -59,20 +62,20 @@ export default function () {
   return (
     <div>
       <Switch>
-        <Route to='/addSong'>
-          <SongCreate currentUser={currentUser} handleCreate={handleCreate}/>
+        {/* <Route to='/addSong'>
+          <SongCreate handleCreate={handleCreate}/>
         </Route>
         
         <Route to='/songs/:id/edit'>
-          <SongEdit currentUser={currentUser} songs={songs} handleDelete={handleDelete} handleUpdate={handleUpdate}/>
+          <SongEdit songs={songs} handleDelete={handleDelete} handleUpdate={handleUpdate}/>
         </Route>
 
         <Route to='/songs/:id'>
-          <SongDetail currentUser={currentUser} reviews={reviews} handleCreateReview={handleCreateReview}/>
-        </Route>
+          <SongDetail reviews={reviews} handleCreateReview={handleCreateReview}/>
+        </Route> */}
 
         <Route to='/songs'>
-          <SongList currentUser={currentUser} songs={songs}/>
+          <SongList songs={songs}/>
         </Route>
 
         <Route to='/home'>
