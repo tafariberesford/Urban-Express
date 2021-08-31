@@ -10,10 +10,9 @@ export default function SongList(props) {
       <div className='list-container'>
         {songs.map((song) => (
           <div className='song-card' key={song.id} onClick={() => history.push (`/songs/${song.id}`)}>
-            <h3>
-              Hottest Top 10 Songs of 2021
-            </h3>
-            <p>{song.image_url}</p>
+            <img src={song?.image_url} />
+            <p>{song.title}</p>
+            <p>{song.artist}</p>
           </div>
         )
         )}

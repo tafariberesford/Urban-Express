@@ -18,7 +18,7 @@ puts "#{User.count} user created"
 @song1 = Song.create!(title: "Wants and Needs", artist: "Drake", image_url: "https://i1.sndcdn.com/artworks-7igI9cWrpvt7-0-t500x500.jpg", user: @user1)
 @song2 = Song.create!(title: "Seeing Green", artist: "Nicki Minaj", image_url: "https://i.scdn.co/image/ab67616d0000b2736d8b9f3e7337f6bff76ceff6", user: @user1)
 @song3 = Song.create!(title: "Up", artist: "Cardi B", image_url: "https://i1.sndcdn.com/artworks-sdNygCXd2zbGK1Yp-8tV2LA-t500x500.jpg", user: @user1)
-@song4 = Song.create!(title: "Crocodile Teeth (Remix)", artist: "Nicki Minaj", image_url: "https://i1.sndcdn.com/artworks-sdNygCXd2zbGK1Yp-8tV2LA-t500x500.jpg", user: @user1)
+@song4 = Song.create!(title: "Crocodile Teeth (Remix)", artist: "Nicki Minaj", image_url: "https://dancehallarena.com/wp-content/uploads/2021/05/NICKI-MINAJ-SKILLIBENG-CROCODILE-TEETH-REMIX.jpg", user: @user1)
 @song5 = Song.create!(title: "Ski", artist: "Young Thug", image_url: "https://i1.sndcdn.com/artworks-mDsLDbWWUf9BuTEp-zCRoKQ-t500x500.jpg", user: @user1)
 @song6 = Song.create!(title: "Industry Baby", artist: "Lil Nas X ft. Jack Harlow", image_url: "https://m.media-amazon.com/images/I/81Uj3NtUuhL._SS500_.jpg", user: @user1)
 @song7 = Song.create!(title: "Jail", artist: "Kanye West", image_url: "https://hipradar.net/wp-content/uploads/2021/07/Kanye-West-DONDA-Album.jpg", user: @user1)
