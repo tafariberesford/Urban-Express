@@ -15,7 +15,7 @@ export const postSong = async (songData) => {
   return resp.data;
 }
 
-export const updateSong = async (id, songData) => {
+export const putSong = async (id, songData) => {
   const resp = await api.put(`/songs/${id}`, { song: songData });
   return resp.data;
 }
