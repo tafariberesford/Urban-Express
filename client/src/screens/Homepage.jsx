@@ -30,6 +30,10 @@ export default function Homepage() {
   
     {
       image: 'https://hipradar.net/wp-content/uploads/2021/07/Kanye-West-DONDA-Album.jpg'
+    },
+    
+    {
+      image: 'https://hipradar.net/wp-content/uploads/2021/07/Kanye-West-DONDA-Album.jpg'
     }
   ];
 
