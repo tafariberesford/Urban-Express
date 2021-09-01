@@ -5,11 +5,11 @@ export default function Homepage() {
 
   const slideData = [
     {
-      image1: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80'
+      image1: 'https://i1.sndcdn.com/artworks-7igI9cWrpvt7-0-t500x500.jpg'
     },
   
     {
-      image2: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1533&q=80'
+      image2: 'https://i.scdn.co/image/ab67616d0000b2736d8b9f3e7337f6bff76ceff6'
     },
   
     {
