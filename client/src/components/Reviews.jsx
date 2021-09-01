@@ -19,12 +19,12 @@ export default function (props) {
   }
   return (
     <div>
-      <form>
+      <form
         onSubmit={(e) => {
         e.preventDefault();
         handleCreateReview(id, formData);
         }}
-        
+        >
       <label>
         Review Title
         <input
