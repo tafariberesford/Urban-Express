@@ -25,7 +25,7 @@ export default function Homepage() {
     },
 
     {
-      image: 'https://dancehallarena.com/wp-content/uploads/2021/05/NICKI-MINAJ-SKILLIBENG-CROCODILE-TEETH-REMIX.jpg'
+      image: 'https://m.media-amazon.com/images/I/81Uj3NtUuhL._SS500_.jpg'
     },
   
     {
