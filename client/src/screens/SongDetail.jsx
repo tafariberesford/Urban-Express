@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getOneSong } from '../services/songs';
 import Reviews from '../components/Reviews';
+import './SongDetail.css'
 
 export default function SongDetail(props) {
   const [singleSong, setSingleSong] = useState(null);
