@@ -13,7 +13,7 @@ export default function Homepage() {
     },
   
     {
-      image3: 'https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw2MzgyNjk1Mnx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1400&q=60'
+      image3: 'https://i1.sndcdn.com/artworks-sdNygCXd2zbGK1Yp-8tV2LA-t500x500.jpg'
     },
   
     {
