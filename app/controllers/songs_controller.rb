@@ -1,6 +1,6 @@
 class SongsController < ApplicationController
 before_action :set_song, only: [:show, :update, :destroy ]
-before_action :authorize_request, only: [:show, :index, :create, :update, :destroy]
+before_action :authorize_request, only: [:index, :create, :update, :destroy]
 
 
   # GET /songs
@@ -13,12 +13,12 @@ before_action :authorize_request, only: [:show, :index, :create, :update, :destr
 
   # # GET /songs/1
   def show
-    render json: @songs, include: {reviews:{include: :user}}
+    render json: @song, include: {reviews:{include: :user}}
   end
 
   # POST /songs
   def create
-    @songs = Song.new(song_params)
+    @song = Song.new(song_params)
     @song.user = @current_user
     
     if @song.save
@@ -51,7 +51,7 @@ before_action :authorize_request, only: [:show, :index, :create, :update, :destr
     end
 
     # Only allow a list of trusted parameters through.
-    def user_params
+    def song_params
       params.require(:song).permit(:title, :artist, :image_url, :user_id)
     end
 end

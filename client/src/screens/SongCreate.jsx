@@ -42,7 +42,7 @@ export default function SongCreate(props) {
         Title
         <input
           type='text'
-          name='Title'
+          name='title'
           value={title}
           onChange={handleChange}
         />
@@ -52,7 +52,7 @@ export default function SongCreate(props) {
         Artist
         <input
           type='text'
-          name='Artist'
+          name='artist'
           value={artist}
           onChange={handleChange}
         />

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import Homepage from '../screens/Homepage';
-// import SongDetail from '../screens/SongDetail';
-// import SongEdit from '../screens/SongEdit';
+import SongDetail from '../screens/SongDetail';
+import SongEdit from '../screens/SongEdit';
 import SongList from '../screens/SongList';
-// import SongCreate from '../screens/SongCreate';
+import SongCreate from '../screens/SongCreate';
 import { getAllReviews, postReview } from "../services/reviews";
 import { getAllSongs, postSong, putSong, deleteSong } from "../services/songs";
 import { useHistory, Switch, Route } from "react-router-dom";
@@ -42,7 +42,7 @@ export default function (props) {
   const handleCreateReview = async (formData) => {
     const reviewData = await postReview(formData);
     setReviews((prevState) => [...prevState, reviewData]);
-    history.push('/songDetail');
+    history.push('/songs');
   };
 
   const handleUpdate = async (id, formData) => {
@@ -52,33 +52,33 @@ export default function (props) {
         return song.id === Number(id) ? songData : song;
       })
     );
-    history.push('/songDetail');
+    history.push('/songs');
   };
 
   const handleDelete = async (id) => {
     await deleteSong(id);
-    setSongs((prevState) => prevState.filter((song) => song.id !== id));
+    setSongs((prevState) => prevState.filter((song) => song.id !== Number(id)));
   };
   return (
     <div>
       <Switch>
-        {/* <Route to='/addSong'>
+        <Route exact path='/addSong'>
           <SongCreate handleCreate={handleCreate}/>
         </Route>
         
-        <Route to='/songs/:id/edit'>
+        <Route exact path='/songs/:id/edit'>
           <SongEdit songs={songs} handleDelete={handleDelete} handleUpdate={handleUpdate}/>
         </Route>
 
-        <Route to='/songs/:id'>
+        <Route exact path='/songs/:id'>
           <SongDetail reviews={reviews} handleCreateReview={handleCreateReview}/>
-        </Route> */}
+        </Route>
 
-        <Route to='/songs'>
+        <Route exact path='/songs'>
           <SongList songs={songs}/>
         </Route>
 
-        <Route to='/home'>
+        <Route exact path='/'>
           <Homepage />
         </Route>
       </Switch>

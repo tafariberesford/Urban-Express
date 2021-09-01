@@ -47,7 +47,7 @@ function App() {
   
   return (
     <div className="App">
-      <Layout currentUser={currentUser} handleLougout={handleLogout}>
+      <Layout currentUser={currentUser} handleLogout={handleLogout}>
       <Route path='/login'>
         <Login handleLogin={handleLogin} />
       </Route>

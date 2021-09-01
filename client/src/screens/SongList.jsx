@@ -17,6 +17,9 @@ export default function SongList(props) {
         )
         )}
       </div>
+      <Link to='/addSong'>
+        <button>Create</button>
+      </Link>
     </div>
   )
 }
