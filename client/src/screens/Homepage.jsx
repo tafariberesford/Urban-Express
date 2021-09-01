@@ -21,7 +21,7 @@ export default function Homepage() {
     },
   
     {
-      image: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Osun_Sacred_Grove%2C_Osogbo_Osun_state.jpg'
+      image: 'https://i1.sndcdn.com/artworks-mDsLDbWWUf9BuTEp-zCRoKQ-t500x500.jpg'
     }
   ];
 
