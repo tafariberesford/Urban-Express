@@ -29,7 +29,7 @@ export default function Homepage() {
     },
   
     {
-      image: 'https://i1.sndcdn.com/artworks-mDsLDbWWUf9BuTEp-zCRoKQ-t500x500.jpg'
+      image: 'https://hipradar.net/wp-content/uploads/2021/07/Kanye-West-DONDA-Album.jpg'
     }
   ];
 
