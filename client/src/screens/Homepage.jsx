@@ -162,7 +162,7 @@ const ImgSlide = () => {
             />
             <Image src={'https://lastfm.freetls.fastly.net/i/u/770x0/334d050af3482fbc0852be9a55d4eebc.jpg'} alt="images"
               drag={true} />
-            <Image src={'https://img.freepik.com/free-vector/flat-hotel-building-background_23-2148152507.jpg?size=338&ext=jpg&ga=GA1.2.2099647507.1627689600'} alt="images"
+            <Image src={'https://i.pinimg.com/originals/5f/9c/6f/5f9c6f1db911102a2450c8bbec66400f.jpg'} alt="images"
               drag={true} />
             <Image src={'https://img.freepik.com/free-vector/earth-globe-design_1053-479.jpg?size=338&ext=jpg'} alt="images"
               drag={true} />
