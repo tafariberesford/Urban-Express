@@ -17,7 +17,7 @@ export default function Homepage() {
     },
   
     {
-      image4: 'https://images.unsplash.com/photo-1515657241610-a6b33f0f6c5a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1442&q=80'
+      image4: 'https://dancehallarena.com/wp-content/uploads/2021/05/NICKI-MINAJ-SKILLIBENG-CROCODILE-TEETH-REMIX.jpg'
     },
   
     {
