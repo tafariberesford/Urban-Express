@@ -41,7 +41,7 @@ export default function Homepage() {
     },
 
     {
-      image: 'https://i.scdn.co/image/ab67616d0000b273ad89f82d9243ed88a6d68787'
+      image: 'https://images.genius.com/08e089999a0472c90a21c4e637019440.1000x1000x1.png'
     }
   ];
 
