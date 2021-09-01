@@ -7,7 +7,8 @@
 }
 
  img {
-  display: flex;
+  display: flexbox;
+  flex-direction: row-wrap;
   align-items: center;
   height: 250px;
   width: 250px;
@@ -21,5 +22,7 @@
   img {
     width: 50%;
     height: 50%;
+    display: flexbox;
+    flex-direction: column;
   }
 }
