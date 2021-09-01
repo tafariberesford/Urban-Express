@@ -35,7 +35,7 @@ export default function SongEdit(props) {
     }));
   }
     return (
-      <div>
+      <div className="song-edit">
         <form
           onSubmit={(e) => {
             e.preventDefault();
