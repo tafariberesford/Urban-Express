@@ -5,19 +5,27 @@ export default function Homepage() {
 
   const slideData = [
     {
-      image1: 'https://i1.sndcdn.com/artworks-7igI9cWrpvt7-0-t500x500.jpg'
+      image: 'https://i1.sndcdn.com/artworks-7igI9cWrpvt7-0-t500x500.jpg'
     },
   
     {
-      image2: 'https://i.scdn.co/image/ab67616d0000b2736d8b9f3e7337f6bff76ceff6'
+      image: 'https://i.scdn.co/image/ab67616d0000b2736d8b9f3e7337f6bff76ceff6'
     },
   
     {
-      image3: 'https://i1.sndcdn.com/artworks-sdNygCXd2zbGK1Yp-8tV2LA-t500x500.jpg'
+      image: 'https://i1.sndcdn.com/artworks-sdNygCXd2zbGK1Yp-8tV2LA-t500x500.jpg'
     },
   
     {
-      image4: 'https://dancehallarena.com/wp-content/uploads/2021/05/NICKI-MINAJ-SKILLIBENG-CROCODILE-TEETH-REMIX.jpg'
+      image: 'https://dancehallarena.com/wp-content/uploads/2021/05/NICKI-MINAJ-SKILLIBENG-CROCODILE-TEETH-REMIX.jpg'
+    },
+  
+    {
+      image: 'https://i1.sndcdn.com/artworks-mDsLDbWWUf9BuTEp-zCRoKQ-t500x500.jpg'
+    },
+
+    {
+      image: 'https://dancehallarena.com/wp-content/uploads/2021/05/NICKI-MINAJ-SKILLIBENG-CROCODILE-TEETH-REMIX.jpg'
     },
   
     {
