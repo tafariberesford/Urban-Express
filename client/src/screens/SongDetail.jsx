@@ -19,7 +19,7 @@ export default function SongDetail(props) {
   }, [])
   
   return (
-    <div>
+    <div className="details">
       <div className="song-detail">
       <img src={singleSong?.image_url} />
       <p>{singleSong?.title}</p>
