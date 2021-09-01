@@ -57,11 +57,11 @@ background: transparent;
 
 const Image = styled(motion.img)`
 position: absolute;
-width: 100%;
-height: 100%;
+// width: 100%;
+// height: 100%;
 // height: 30px;
-max-width: 350px;
-max-height: 350px;
+max-width: 300px;
+max-height: 300px;
 
 `;
 
@@ -77,48 +77,56 @@ position: relative;
 }
 
 ${Image}:nth-child(1) {
-  bottom: 65px;
-  left: 250px;
+  bottom: 225px;
+  left: 520px;
   border-radius: 50%;
 
   @media screen and (max-width: 600px) {
-    bottom: 370px;
-    left: 270px;
+    width: 100px;
+    height: 100px;
+    bottom: 225px;
+    left: 220px;
   }
 }
 ${Image}:nth-child(2) {
-  bottom: 65px;
-  left: 320px;
+  top: -130px;
+  left: 520px;
   border-radius: 50%;
 
   @media screen and (max-width: 600px) {
-    bottom: 270px;
-    left: 270px;
+    width: 100px;
+    height: 100px;
+    top: -50x;
+    left: 222px;
   }
 }
 ${Image}:nth-child(3) {
-  bottom: 65px;
-  left: 390px;
+  bottom: 215px;
+  left: 850px;
   border-radius: 50%;
 
   @media screen and (max-width: 600px) {
-    bottom: 170px;
-    left: 270px;
+    width: 100px;
+    height: 100px;
+    bottom: 35px;
+    left: 222px;
   }
 }
 ${Image}:nth-child(4) {
-  bottom: 65px;
-  left: 460px;
+  top: -130px;
+  left: 850px;
   border-radius: 50%;
 
   @media screen and (max-width: 600px) {
-    bottom: 70px;
-    left: 270px;
+    width: 100px;
+    height: 100px;
+    top: 35px;
+    left: 222px;
   }
 }
 `;
 
-const ImgSlide = () => {
+const framer = () => {
   const motionLeft = {
     hidden: { opacity: 0, x: -100 },
     visible: {opacity: 1, x: 0}
@@ -174,4 +182,4 @@ const ImgSlide = () => {
   )
 }
 
-export default ImgSlide
+export default framer
