@@ -6,14 +6,14 @@
 
  img {
   display: flexbox;
-  flex-direction: row-wrap;
+  flex-flow: wrap;
   align-items: center;
   height: 250px;
   width: 250px;
   margin: 0 auto;
   border-radius: 75%;
-  box-shadow: 0 0 140px 90px #0ff;
-  border-style: inset;
+  box-shadow: 0 0 120px 20px #0ff;
+  border-style: solid;
 }
 
 @media only screen and (max-width: 600px) {
