@@ -3,7 +3,7 @@
 
 ## Overview
 
-_**Urban Express** is a website that features the top 10 songs that we released in 2021 so far - where users can view and leave their own review of the songs listed on our top 10. Users will also be able to look at my own reviews for the top 10 songs that were chosen by myself.
+_**Urban Express** is a website that features the top 10 songs that we released in 2021 - where users can view and leave their own review of the songs listed on our top 10. Users will also be able to look at my own reviews for the top 10 songs that were chosen by myself.
 
 
 <br>
