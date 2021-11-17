@@ -106,7 +106,7 @@ src
 
 ## Post-MVP
 
-> Animation Slideshows, framer motion animations, and authentication.
+> Animation Slideshows and authentication.
 
 ***
 
