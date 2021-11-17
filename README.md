@@ -49,7 +49,7 @@ https://www.figma.com/file/kd6bbp3VwmZaJvU0rcVFrw/UrbanExpressWireFrame
 
 #### Component Architecture
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like.. 
 
 ``` structure
 
@@ -106,7 +106,7 @@ src
 
 ## Post-MVP
 
-> Animation Slideshows, Framer animations, and authentication.
+> Animation Slideshows, framer motion animations, and authentication.
 
 ***
 
